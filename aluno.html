@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Painel do Aluno</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo, <span id="nomeAluno"></span></h1>
+    <nav>
+      <a href="catalogo.html">Ver Catálogo de Cursos</a> |
+      <a href="#" id="sair">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Escolha um curso no catálogo para começar!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - 2ehc Treinamentos</p>
+  </footer>
+
+  <script>
+    const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+    if (!usuario) {
+      window.location.href = 'index.html';
+    } else {
+      document.getElementById('nomeAluno').textContent = usuario.nome;
+    }
+
+    document.getElementById('sair').addEventListener('click', () => {
+      localStorage.removeItem('usuarioLogado');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

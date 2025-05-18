@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meus Cursos - 2EHC Treinamentos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>2EHC Treinamentos</h1>
+    <nav>
+      <a href="index.html">Sair</a>
+    </nav>
+  </header>
+
+  <div class="sidebar">
+    <a href="cursos.html">📚 Cursos</a>
+    <a href="financeiro.html">💰 Financeiro</a>
+    <a href="acompanhamento.html">📈 Acompanhamento</a>
+  </div>
+
+  <main>
+    <h2>Meus Cursos</h2>
+
+    <section>
+      <h3>Curso de NR10 – Segurança em Instalações Elétricas</h3>
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+      <br />
+      <button class="botao" onclick="marcarConcluido('nr10')">Concluir Curso</button>
+    </section>
+
+    <section>
+      <h3>Curso de Primeiros Socorros</h3>
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+      <br />
+      <button class="botao" onclick="marcarConcluido('socorros')">Concluir Curso</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 2EHC Treinamentos | Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function marcarConcluido(curso) {
+      localStorage.setItem(curso, 'concluido');
+      alert("Curso marcado como concluído!");
+    }
+  </script>
+</body>
+</html>

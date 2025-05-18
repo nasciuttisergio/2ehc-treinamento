@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2EHC Treinamentos - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      background-color: #002244;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 80px;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      padding: 15px;
+      border-bottom: 1px solid #003366;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    nav ul li a i {
+      margin-right: 10px;
+    }
+    main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .course-box {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2EHC Treinamentos</h1>
+    <div>
+      <a href="login.html" style="color: white; text-decoration: none;">Login</a> |
+      <a href="cadastro.html" style="color: white; text-decoration: none;">Criar Conta</a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="#"><i class="fas fa-book"></i> Cursos</a></li>
+      <li><a href="#"><i class="fas fa-chart-line"></i> Acompanhamento</a></li>
+      <li><a href="#"><i class="fas fa-wallet"></i> Financeiro</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="course-box">
+      <h2>Bem-vindo à plataforma 2EHC!</h2>
+      <p>Aqui você encontra treinamentos personalizados para empresas e profissionais.</p>
+    </div>
+    <div class="course-box">
+      <h3>Curso em Destaque: Segurança do Trabalho</h3>
+      <p>Aprenda os fundamentos de segurança ocupacional com vídeos e exercícios práticos.</p>
+      <button onclick="window.location.href='login.html'">Acessar Curso</button>
+    </div>
+    <div class="course-box">
+      <h3>Curso: Liderança e Gestão</h3>
+      <p>Desenvolva habilidades de liderança com foco em resultados.</p>
+      <button onclick="window.location.href='login.html'">Acessar Curso</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 2EHC Treinamentos. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
